@@ -1,0 +1,1 @@
+# Suport-Script-Bedrock

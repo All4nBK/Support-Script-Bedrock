@@ -1,4 +1,4 @@
-import { Entity, EntityEquippableComponent, EquipmentSlot, Player, world } from '@minecraft/server';
+import { Entity, EntityEquippableComponent, EquipmentSlot, Player, world,system } from '@minecraft/server';
 
 
 /**

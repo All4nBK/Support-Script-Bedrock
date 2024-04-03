@@ -93,39 +93,39 @@ class Support {
         switch (slot.slot) {
             case 'mainhand':
                 const mainhand = componet.getEquipment(EquipmentSlot.Mainhand);
-                if (mainhand.typeId != '') {
-                    return mainhand;
-                } else return
+                if (mainhand ?? false) {
+                    return mainhand.typeId;
+                }
                 break
             case 'offhand':
                 const offhand = componet.getEquipment(EquipmentSlot.Offhand);
-                if (offhand.typeId != '') {
-                    return offhand;
-                } else return
+                if (offhand ?? false) {
+                    return offhand.typeId;
+                }
                 break
             case 'helmet':
                 const helmet = componet.getEquipment(EquipmentSlot.Head);
-                if (helmet.typeId != '') {
-                    return helmet;
-                } else return
+                if (helmet ?? false) {
+                    return helmet.typeId;
+                }
                 break
             case 'chestplace':
                 const chestplace = componet.getEquipment(EquipmentSlot.Chest);
-                if (chestplace.typeId != '') {
-                    return chestplace;
-                } else return
+                if (chestplace ?? false) {
+                    return chestplace.typeId;
+                }
                 break
             case 'leggings':
                 const leggings = componet.getEquipment(EquipmentSlot.Legs);
-                if (leggings.typeId != '') {
-                    return leggings;
-                } else return
+                if (leggings ?? false) {
+                    return leggings.typeId;
+                }
                 break
             case 'boots':
                 const boots = componet.getEquipment(EquipmentSlot.Feet);
-                if (boots.typeId != '') {
-                    return boots;
-                } else return
+                if (boots ?? false) {
+                    return boots.typeId;
+                }
                 break
         }
 
